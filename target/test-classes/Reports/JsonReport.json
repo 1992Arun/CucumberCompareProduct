@@ -1,0 +1,205 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-02-05T04:45:58.509Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4829954700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify adding the product for comparision from Product Display Page",
+        "description": "",
+        "id": "verify--the-product-comparision-functionality;verify-adding-the-product-for-comparision-from-product-display-page",
+        "after": [
+          {
+            "result": {
+              "duration": 613471000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5131319600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the Application URL in any supported browser",
+            "match": {
+              "location": "StepDefinition.open_the_Application_URL_in_any_supported_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 270713700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter any existing Product name into the Search text box field",
+            "match": {
+              "location": "StepDefinition.enter_any_existing_Product_name_into_the_Search_text_box_field(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Product1",
+                  "iMac"
+                ]
+              },
+              {
+                "cells": [
+                  "Product2",
+                  "iPhone"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 508261200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click on the \"searchicon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"searchicon\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20364419100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on the \"Product\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Product\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException\nBuild info: version: \u00274.12.0\u0027, revision: \u0027249f2a7d1b*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [bca5cb03acd5d57d41c2c3632236300c, actions {actions\u003d[org.openqa.selenium.interactions.Sequence@7db0565c]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.162, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\\Users\\Arun\\AppData\\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65183/devtoo..., se:cdpVersion: 132.0.6834.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: bca5cb03acd5d57d41c2c3632236300c\r\n\tat org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)\r\n\tat org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)\r\n\tat java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)\r\n\tat java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)\r\n\tat java.util.Iterator.forEachRemaining(Unknown Source)\r\n\tat java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.copyInto(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\r\n\tat java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)\r\n\tat java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.evaluate(Unknown Source)\r\n\tat java.util.stream.ReferencePipeline.forEach(Unknown Source)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)\r\n\tat org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)\r\n\tat org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:133)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:119)\r\n\tat org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:273)\r\n\tat org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:179)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:688)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:605)\r\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:574)\r\n\tat org.utility.BaseClass.mouseOver(BaseClass.java:373)\r\n\tat org.step.StepDefinition.hover_the_mouse_cursor_on_Compare_this_Product_option_from_the_displayed_Product_Display_Page(StepDefinition.java:65)\r\n\tat ✽.Hover the mouse cursor on Compare this Product option from the displayed Product Display Page(file:src/test/resources/Folder/compare.feature:17)\r\n\tSuppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream\nBuild info: version: \u00274.12.0\u0027, revision: \u0027249f2a7d1b*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\t\tat org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)\r\n\t\tat org.openqa.selenium.json.Json.toJson(Json.java:131)\r\n\t\tat org.openqa.selenium.json.Json.toJson(Json.java:119)\r\n\t\tat org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:273)\r\n\t\tat org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)\r\n\t\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:179)\r\n\t\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\t\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\t\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\t\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:688)\r\n\t\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:605)\r\n\t\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:574)\r\n\t\tat org.utility.BaseClass.mouseOver(BaseClass.java:373)\r\n\t\tat org.step.StepDefinition.hover_the_mouse_cursor_on_Compare_this_Product_option_from_the_displayed_Product_Display_Page(StepDefinition.java:65)\r\n\t\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\t\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\t\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\t\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\t\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\t\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\t\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\t\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\t\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\t\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\t\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\t\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\t\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\t\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\t\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\t\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\t\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\t\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\t\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\t\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\t\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\t\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\t\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\t\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\t\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\t\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\t\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\t\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\t\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\t\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\t\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\t\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\t\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\t\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\t\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\t\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\t\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\t\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\t\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\t\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\t\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\t\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\t\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\t\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\t\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)\r\n\tat org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)\r\n\tat java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)\r\n\tat java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)\r\n\tat java.util.Iterator.forEachRemaining(Unknown Source)\r\n\tat java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.copyInto(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\r\n\tat java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)\r\n\tat java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.evaluate(Unknown Source)\r\n\tat java.util.stream.ReferencePipeline.forEach(Unknown Source)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)\r\n\tat org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)\r\n\tat org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)\r\n\tat org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)\r\n\tat org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:133)\r\n\tat org.openqa.selenium.json.Json.toJson(Json.java:119)\r\n\tat org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:273)\r\n\tat org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:179)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:688)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:605)\r\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:574)\r\n\tat org.utility.BaseClass.mouseOver(BaseClass.java:373)\r\n\tat org.step.StepDefinition.hover_the_mouse_cursor_on_Compare_this_Product_option_from_the_displayed_Product_Display_Page(StepDefinition.java:65)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\nCaused by: org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection\nfrom disconnected: unable to send message to renderer\n  (Session info: chrome\u003d132.0.6834.162)\nBuild info: version: \u00274.12.0\u0027, revision: \u0027249f2a7d1b*\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [bca5cb03acd5d57d41c2c3632236300c, findElement {using\u003dxpath, value\u003d(//button[@*\u003d\u0027Compare this Product\u0027])[1]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.162, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\\Users\\Arun\\AppData\\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65183}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65183/devtoo..., se:cdpVersion: 132.0.6834.162, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: bca5cb03acd5d57d41c2c3632236300c\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy22.getWrappedElement(Unknown Source)\r\n\tat org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:259)\r\n\tat org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:208)\r\n\tat org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)\r\n\tat org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)\r\n\t... 83 more\r\n",
+              "duration": 6167171300,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "Hover the mouse cursor on Compare this Product option from the displayed Product Display Page",
+            "match": {
+              "location": "StepDefinition.hover_the_mouse_cursor_on_Compare_this_Product_option_from_the_displayed_Product_Display_Page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68100,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Text Should be displayed",
+            "match": {
+              "location": "StepDefinition.text_Should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42600,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Click on the \"Compare this options\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Compare this options\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27100,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "You have added Product Name to your product comparison! should be displayed",
+            "match": {
+              "location": "StepDefinition.you_have_added_Product_Name_to_your_product_comparison_should_be_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26100,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "Click on the \"product comparision link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"product comparision link\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25600,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "User should be taken to the Product Comparison page with the details of the Product that we have added for comparision.",
+            "match": {
+              "location": "StepDefinition.user_should_be_taken_to_the_Product_Comparison_page_with_the_details_of_the_Product_that_we_have_added_for_comparision()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify  the product comparision functionality",
+    "description": "",
+    "id": "verify--the-product-comparision-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Folder/compare.feature",
+    "tags": []
+  }
+]

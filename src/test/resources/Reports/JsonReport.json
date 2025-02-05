@@ -1,0 +1,204 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-02-05T04:47:10.197Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4178375400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify adding the product for comparision from Product Display Page",
+        "description": "",
+        "id": "verify--the-product-comparision-functionality;verify-adding-the-product-for-comparision-from-product-display-page",
+        "after": [
+          {
+            "result": {
+              "duration": 715975100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4603400300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the Application URL in any supported browser",
+            "match": {
+              "location": "StepDefinition.open_the_Application_URL_in_any_supported_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 263754500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter any existing Product name into the Search text box field",
+            "match": {
+              "location": "StepDefinition.enter_any_existing_Product_name_into_the_Search_text_box_field(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Product1",
+                  "iMac"
+                ]
+              },
+              {
+                "cells": [
+                  "Product2",
+                  "iPhone"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 399367300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click on the \"searchicon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"searchicon\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1156302700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on the \"Product\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Product\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 216087300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Hover the mouse cursor on Compare this Product option from the displayed Product Display Page",
+            "match": {
+              "location": "StepDefinition.hover_the_mouse_cursor_on_Compare_this_Product_option_from_the_displayed_Product_Display_Page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 240149200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Text Should be displayed",
+            "match": {
+              "location": "StepDefinition.text_Should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 256182000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click on the \"Compare this options\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Compare this options\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 270190900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "You have added Product Name to your product comparison! should be displayed",
+            "match": {
+              "location": "StepDefinition.you_have_added_Product_Name_to_your_product_comparison_should_be_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 582339300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click on the \"product comparision link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"product comparision link\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66530400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User should be taken to the Product Comparison page with the details of the Product that we have added for comparision.",
+            "match": {
+              "location": "StepDefinition.user_should_be_taken_to_the_Product_Comparison_page_with_the_details_of_the_Product_that_we_have_added_for_comparision()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify  the product comparision functionality",
+    "description": "",
+    "id": "verify--the-product-comparision-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Folder/compare.feature",
+    "tags": []
+  }
+]
