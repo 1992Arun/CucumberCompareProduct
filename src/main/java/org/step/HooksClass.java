@@ -30,6 +30,8 @@ public class HooksClass extends BaseClass {
 			 byte[] screenshotAs = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 			 
 			 sc.embed(screenshotAs, "images/png");
+			 
+			 System.out.println("Added new Test");
 		}
 		
 		
