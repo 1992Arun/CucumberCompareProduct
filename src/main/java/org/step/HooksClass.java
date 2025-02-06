@@ -31,7 +31,7 @@ public class HooksClass extends BaseClass {
 			 
 			 sc.embed(screenshotAs, "images/png");
 			 
-			 
+			 System.out.println("");
 		}
 		
 		
