@@ -3,11 +3,175 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2025-02-05T04:47:10.197Z",
+        "start_timestamp": "2025-02-06T18:01:20.733Z",
         "before": [
           {
             "result": {
-              "duration": 4178375400,
+              "duration": 5629596601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify adding the product for comparision from List View of Product Category or Sub Category page",
+        "description": "",
+        "id": "verify-adding-the-product-for-comparision;verify-adding-the-product-for-comparision-from-list-view-of-product-category-or-sub-category-page",
+        "after": [
+          {
+            "result": {
+              "duration": 250500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5335374800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open the Application URL in any supported browser",
+            "match": {
+              "location": "StepDefinition.open_the_Application_URL_in_any_supported_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12909692899,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Hover the mouse on any Menu say Desktops and select Show All Desktops option",
+            "match": {
+              "location": "CompareProduct.hover_the_mouse_on_any_Menu_say_Desktops_and_select_Show_All_Desktops_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 280933699,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "In the displayed Desktops category page, select List View option",
+            "match": {
+              "location": "CompareProduct.in_the_displayed_Desktops_category_page_select_List_View_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 704708700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Hover the mouse cursor on Compare this Product option from the displayed Product Display Page",
+            "match": {
+              "location": "StepDefinition.hover_the_mouse_cursor_on_Compare_this_Product_option_from_the_displayed_Product_Display_Page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 230962700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Text Should be displayed",
+            "match": {
+              "location": "StepDefinition.text_Should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 265470099,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on the \"Compare this options\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Compare this options\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141527900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "You have added Product Name to your product comparison! should be displayed",
+            "match": {
+              "location": "StepDefinition.you_have_added_Product_Name_to_your_product_comparison_should_be_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1529873000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on the \"product comparision link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"product comparision link\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinition.click_on_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64488600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should be taken to the Product Comparison page with the details of the Product that we have added for comparision.",
+            "match": {
+              "location": "StepDefinition.user_should_be_taken_to_the_Product_Comparison_page_with_the_details_of_the_Product_that_we_have_added_for_comparision()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify adding the product for comparision",
+    "description": "",
+    "id": "verify-adding-the-product-for-comparision",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Folder/CompareList.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2025-02-06T18:01:47.859Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2429169900,
               "status": "passed"
             },
             "match": {
@@ -22,11 +186,11 @@
         "after": [
           {
             "result": {
-              "duration": 715975100,
+              "duration": 57000,
               "status": "passed"
             },
             "match": {
-              "location": "HooksClass.tearDown()"
+              "location": "HooksClass.tearDown(Scenario)"
             }
           }
         ],
@@ -35,7 +199,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4603400300,
+              "duration": 7269389000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +211,7 @@
           },
           {
             "result": {
-              "duration": 263754500,
+              "duration": 374847101,
               "status": "passed"
             },
             "line": 7,
@@ -73,7 +237,7 @@
           },
           {
             "result": {
-              "duration": 399367300,
+              "duration": 494401000,
               "status": "passed"
             },
             "line": 13,
@@ -91,7 +255,7 @@
           },
           {
             "result": {
-              "duration": 1156302700,
+              "duration": 1883223901,
               "status": "passed"
             },
             "line": 15,
@@ -109,7 +273,7 @@
           },
           {
             "result": {
-              "duration": 216087300,
+              "duration": 181592900,
               "status": "passed"
             },
             "line": 17,
@@ -121,7 +285,7 @@
           },
           {
             "result": {
-              "duration": 240149200,
+              "duration": 132919000,
               "status": "passed"
             },
             "line": 19,
@@ -133,7 +297,7 @@
           },
           {
             "result": {
-              "duration": 256182000,
+              "duration": 235854401,
               "status": "passed"
             },
             "line": 21,
@@ -151,7 +315,7 @@
           },
           {
             "result": {
-              "duration": 270190900,
+              "duration": 227424100,
               "status": "passed"
             },
             "line": 23,
@@ -163,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 582339300,
+              "duration": 537858101,
               "status": "passed"
             },
             "line": 25,
@@ -181,7 +345,7 @@
           },
           {
             "result": {
-              "duration": 66530400,
+              "duration": 63263600,
               "status": "passed"
             },
             "line": 27,

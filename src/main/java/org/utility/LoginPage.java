@@ -12,6 +12,22 @@ public class LoginPage extends BaseClass {
 	}
 	
 	
+	public WebElement getDesktop() {
+		return desktop;
+	}
+
+
+	public WebElement getShowAllDesktop() {
+		return showAllDesktop;
+	}
+
+
+	@FindBy(xpath="(//a[@class='dropdown-toggle'])[2]")
+	private WebElement desktop;
+	
+	@FindBy(xpath="//a[contains(text(),'Show AllDesktops')]")
+	private WebElement showAllDesktop;
+	
 
 	@FindBy(name="search")
 	private WebElement SearchBox;
